@@ -25,3 +25,54 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* solution */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* button padding */
+button {
+  padding: 8px 16px;
+}
+
+/* logo, input and buttons are centered in the screen */
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* remove link decorations for underline and color change */
+a {
+ text-decoration: none; 
+ color: #666;
+}
+
+/* stick header to the top */
+/* stick footer to the bottom use flex and direction column */
+.header, 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/* footer background color */
+.footer {
+  background: #eee;
+}
+
+/* remove bullet points */
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
