@@ -27,3 +27,68 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* solution */
+/* make the body be a column */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+/* add divs as containers to get things lined up correctly */
+.middle-section {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+/* add divs as containers to get things lined up correctly */
+/* cards are arrange horizontally but wrap to multiple lines when they run out of room on the page. */
+.content {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* flex wrap will get the cards lined up corretly.  */
+/* make sure to add how much space the cards should take up, in order for flex wrap to work */
+.card {
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+}
+
+/* need to change flex direction to push footer down */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
