@@ -67,3 +67,27 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* solution */
+/*need a container for the heading, paragrah and buttons */
+.modal {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+.icon {
+  /* this keeps the icon from getting smashed by the text */
+  flex-shrink: 0;
+}
+/* need the header and close button(x) to have space between and centered */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.text {
+  margin-bottom: 16px;
+}
